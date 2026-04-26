@@ -59,17 +59,17 @@ export default function Footer() {
 
             {/* Contact quick */}
             <div className="space-y-2.5">
-              <a href="tel:+4738007700" className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group">
+              <a href="tel:+4737931550" className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group">
                 <Phone size={14} className="text-brand-500 group-hover:text-brand-400" />
-                38 00 77 00
+                37 93 15 50
               </a>
-              <a href="mailto:post@databutikkenevje.no" className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group">
+              <a href="mailto:post@dataevje.no" className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group">
                 <Mail size={14} className="text-brand-500 group-hover:text-brand-400" />
-                post@databutikkenevje.no
+                post@dataevje.no
               </a>
               <div className="flex items-center gap-2.5 text-sm text-gray-400">
                 <MapPin size={14} className="text-brand-500" />
-                Evjemoen, 4735 Evje
+                Nils Heglands veg 26, Evje
               </div>
             </div>
 

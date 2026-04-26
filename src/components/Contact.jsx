@@ -2,8 +2,8 @@ import { Phone, Mail, MapPin, Clock, Send, ChevronRight } from 'lucide-react'
 import { useState } from 'react'
 
 const hours = [
-  { day: 'Mandag – fredag', time: '09:00 – 17:00' },
-  { day: 'Lørdag', time: '10:00 – 15:00' },
+  { day: 'Mandag – fredag', time: '09:00 – 16:30' },
+  { day: 'Lørdag', time: '10:00 – 14:00' },
   { day: 'Søndag', time: 'Stengt' },
 ]
 
@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="lg:col-span-2 space-y-6">
             {/* Contact cards */}
             <a
-              href="tel:+4738007700"
+              href="tel:+4737931550"
               className="flex items-center gap-4 p-5 bg-surface-800 border border-white/6 rounded-2xl hover:border-brand-500/30 transition-all duration-200 group"
             >
               <div className="w-11 h-11 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 group-hover:scale-110 transition-transform">
@@ -52,13 +52,13 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 mb-0.5">Telefon</div>
-                <div className="text-base font-semibold text-white">38 00 77 00</div>
+                <div className="text-base font-semibold text-white">37 93 15 50</div>
               </div>
               <ChevronRight size={16} className="text-gray-600 ml-auto group-hover:text-brand-400 transition-colors" />
             </a>
 
             <a
-              href="mailto:post@databutikkenevje.no"
+              href="mailto:post@dataevje.no"
               className="flex items-center gap-4 p-5 bg-surface-800 border border-white/6 rounded-2xl hover:border-brand-500/30 transition-all duration-200 group"
             >
               <div className="w-11 h-11 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 group-hover:scale-110 transition-transform">
@@ -66,7 +66,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 mb-0.5">E-post</div>
-                <div className="text-sm font-semibold text-white">post@databutikkenevje.no</div>
+                <div className="text-sm font-semibold text-white">post@dataevje.no</div>
               </div>
               <ChevronRight size={16} className="text-gray-600 ml-auto group-hover:text-brand-400 transition-colors" />
             </a>
@@ -77,7 +77,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-xs text-gray-500 mb-0.5">Adresse</div>
-                <div className="text-sm font-semibold text-white">Evjemoen, 4735 Evje</div>
+                <div className="text-sm font-semibold text-white">Nils Heglands veg 26, Evje</div>
                 <div className="text-xs text-gray-500 mt-1">Evje og Hornnes kommune</div>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                 </div>
                 <span className="text-xs font-medium">Evje, Setesdal</span>
                 <a
-                  href="https://maps.google.com/?q=Evje+og+Hornnes"
+                  href="https://maps.google.com/?q=Nils+Heglands+veg+26,+Evje"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-brand-400 hover:text-brand-300 transition-colors underline underline-offset-2"
@@ -230,8 +230,8 @@ export default function Contact() {
 
                     <p className="text-xs text-gray-600 text-center">
                       Eller ring oss direkte på{' '}
-                      <a href="tel:+4738007700" className="text-brand-400 hover:text-brand-300 transition-colors">
-                        38 00 77 00
+                      <a href="tel:+4737931550" className="text-brand-400 hover:text-brand-300 transition-colors">
+                        37 93 15 50
                       </a>
                     </p>
                   </form>

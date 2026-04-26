@@ -93,23 +93,45 @@ export default function WhyUs() {
           </p>
         </div>
 
-        {/* Reasons grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
-          {reasons.map((r) => {
-            const Icon = r.icon
-            return (
-              <div
-                key={r.title}
-                className="group p-6 bg-surface-800/60 border border-white/6 rounded-2xl hover:border-white/12 hover:bg-surface-800 transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <div className={`w-10 h-10 rounded-xl ${r.bg} flex items-center justify-center mb-4 ${r.color} group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon size={20} />
+        {/* Reasons + photo */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-20 items-start">
+          {/* Reasons grid */}
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {reasons.map((r) => {
+              const Icon = r.icon
+              return (
+                <div
+                  key={r.title}
+                  className="group p-6 bg-surface-800/60 border border-white/6 rounded-2xl hover:border-white/12 hover:bg-surface-800 transition-all duration-300 hover:-translate-y-0.5"
+                >
+                  <div className={`w-10 h-10 rounded-xl ${r.bg} flex items-center justify-center mb-4 ${r.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon size={20} />
+                  </div>
+                  <h3 className="text-base font-bold text-white mb-2">{r.title}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">{r.description}</p>
                 </div>
-                <h3 className="text-base font-bold text-white mb-2">{r.title}</h3>
-                <p className="text-sm text-gray-400 leading-relaxed">{r.description}</p>
+              )
+            })}
+          </div>
+
+          {/* Interior photo */}
+          <div className="lg:col-span-2">
+            <div className="relative rounded-2xl overflow-hidden border border-white/8 shadow-2xl shadow-black/60">
+              <img
+                src="/bilde01.jpg"
+                alt="Inne i Databutikken Evje – retroutstyr og datamaskiner"
+                className="w-full h-full object-cover object-center"
+                style={{ minHeight: '420px' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-900/80 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <p className="text-xs text-brand-400 font-semibold tracking-widest uppercase mb-1">Inne i butikken</p>
+                <p className="text-sm text-gray-300 leading-snug">
+                  Fra retro til moderne – vi har utstyr og kunnskap for alle behov.
+                </p>
               </div>
-            )
-          })}
+            </div>
+          </div>
         </div>
 
         {/* Testimonials */}

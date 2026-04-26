@@ -59,11 +59,11 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+4738007700"
+              href="tel:+4737931550"
               className="flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               <Phone size={15} />
-              38 00 77 00
+              37 93 15 50
             </a>
             <a
               href="#kontakt"
@@ -102,11 +102,11 @@ export default function Navbar() {
             ))}
             <div className="pt-3 px-3 flex flex-col gap-2">
               <a
-                href="tel:+4738007700"
+                href="tel:+4737931550"
                 className="flex items-center gap-2 text-sm font-medium text-gray-400"
               >
                 <Phone size={15} />
-                38 00 77 00
+                37 93 15 50
               </a>
               <a
                 href="#kontakt"
